@@ -5,6 +5,7 @@ import { useState } from "react";
 import { navLinks } from "@/constants/Constant";
 import Link from "next/link";
 import Image from "next/image";
+import Button from "./Button";
 
 const Navbar = () => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
@@ -18,7 +19,13 @@ const Navbar = () => {
       <div className="container px-4 mx-auto relative lg:text-sm">
         <div className="flex justify-between items-center">
           <div className="flex items-center flex-shrink-0">
-            <Image className="h-10 w-10 mr-2" src="/image.png" alt="Logo" width={40}  height={40}/>
+            <Image
+              className="h-10 w-10 mr-2"
+              src="/image.png"
+              alt="Logo"
+              width={40}
+              height={40}
+            />
             <span className="text-xl tracking-tight">Verbum Networks</span>
           </div>
           <ul className="hidden lg:flex ml-14 space-x-12">
@@ -29,17 +36,19 @@ const Navbar = () => {
             ))}
           </ul>
           <div className="hidden lg:flex justify-center space-x-12 items-center">
-            <a href="#" className="py-2 px-3 border rounded-md">
-              Sign In
-            </a>
-            <a
-              href="#"
-              className="bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md"
-            >
-              Create an account
-            </a>
+            <Link href="/signin" className="py-2 px-3 rounded-full">
+              <Button label="Sign In" variant="outline" />
+            </Link>
+
+            <Link href="/register">
+              <Button
+                label="Create an account"
+                variant="primary"
+                className="bg-gradient-to-br from-purple-600 to-blue-500 py-2 px-3 rounded-md"
+              />
+            </Link>
           </div>
-          <div className="lg:hidden md:flex flex-col justify-end">
+          <div className="lg:hidden md:flex flex-col justify-center items-center">
             <button onClick={toggleNavbar}>
               {mobileDrawerOpen ? <X /> : <Menu />}
             </button>
@@ -73,5 +82,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-

@@ -5,9 +5,12 @@ import React from "react";
 interface ButtonProps {
   label: string;
   onClick?: () => void;
-  variant?: "primary" | "secondary" | "outline"; // Different button styles
-  className?: string; // Custom styles
+  variant?: "primary" | "secondary" | "outline";
+  className?: string;
   disabled?: boolean;
+  type?: "button" | "submit" | "reset";
+  iconLeft?: React.ReactNode;
+  iconRight?: React.ReactNode;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -16,23 +19,30 @@ const Button: React.FC<ButtonProps> = ({
   variant = "primary",
   className = "",
   disabled = false,
+  type = "button",
+  iconLeft,
+  iconRight,
 }) => {
-  const baseStyles = "px-4 py-2 font-semibold rounded transition duration-300";
+  const baseStyles =
+    "inline-flex items-center justify-center gap-2 px-5 py-2.5 font-medium rounded-2xl transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500";
 
-  // Different button styles
   const variants = {
-    primary: "bg-green-600 text-white hover:bg-green-700",
+    primary: "bg-gradient-to-br from-purple-600 to-blue-500 ",
     secondary: "bg-gray-600 text-white hover:bg-gray-700",
-    outline: "border border-green-600 text-green-600 hover:bg-green-600 hover:text-white",
+    outline:
+      "border border-orange-600 text-white hover:bg-gradient-to-br from-purple-600 to-blue-500 hover:text-white",
   };
 
   return (
     <button
       onClick={onClick}
+      type={type}
       className={`${baseStyles} ${variants[variant]} ${className}`}
       disabled={disabled}
     >
-      {label}
+      {iconLeft && <span className="w-5 h-5">{iconLeft}</span>}
+      <span>{label}</span>
+      {iconRight && <span className="w-5 h-5">{iconRight}</span>}
     </button>
   );
 };
