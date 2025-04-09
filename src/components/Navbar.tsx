@@ -36,13 +36,11 @@ const Navbar = () => {
             ))}
           </ul>
           <div className="hidden lg:flex justify-center space-x-12 items-center">
-            <Link href="/signin" className="py-2 px-3 rounded-full">
-              <Button label="Sign In" variant="outline" />
-            </Link>
+          
 
             <Link href="/register">
               <Button
-                label="Create an account"
+                label="Book a demo"
                 variant="primary"
                 className="bg-gradient-to-br from-purple-600 to-blue-500 py-2 px-3 rounded-md"
               />
@@ -64,14 +62,12 @@ const Navbar = () => {
               ))}
             </ul>
             <div className="flex space-x-6">
-              <Link href="#" className="py-2 px-3 border rounded-md">
-                Sign In
-              </Link>
+          
               <Link
                 href="#"
                 className="py-2 px-3 rounded-md bg-gradient-to-r from-orange-500 to-orange-800"
               >
-                Create an account
+               Book a Demo
               </Link>
             </div>
           </div>
