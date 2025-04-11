@@ -1,9 +1,8 @@
 export type Navlink = {label: string, url:string, id:number}
-// interface Navlink {label: string, url:string, id:number, name?:string}
 export const navLinks:Navlink[]  = [
     { 
-        label: "Hero", 
-        url: "#",
+        label: "Features", 
+        url: "#features",
         id:1 ,
      },
      { 
@@ -13,25 +12,22 @@ export const navLinks:Navlink[]  = [
     },
 
     { 
-        label:"Features", 
-        url: "#features",
+        label:"Workflow", 
+        url: "#workflow",
         id:3
     },
 
     { 
-        label: "Pricing",
-         url: "#pricing",
+        label: "Contact",
+         url: "#contact",
          id:4
     },
     { 
-        label: "Testimonials",
-         url: "#testimony",
+        label: "Pricing",
+         url: "#pricing",
          id: 5
     },
-    { 
-        label: "Contact",
-        url: "#contact",
-        id: 6
-    },
+   
   ];
 //   {label: string, url:string, id:number, name?:string}[]
+// interface Navlink {label: string, url:string, id:number, name?:string}

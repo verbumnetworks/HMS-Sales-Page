@@ -1,15 +1,12 @@
-
-const Features = () => {
+const Features: React.FC = () => {
   return (
-    <div>Features</div>
-  )
-}
+    <div>
+      feature 
+    </div>
+  );
+};
 
-export default Features
-
-
-
-
+export default Features;
 // import { Hospital, CalendarDays, Users, FileText, Stethoscope, CreditCard } from 'lucide-react'
 
 // const features = [

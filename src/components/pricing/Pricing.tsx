@@ -1,5 +1,5 @@
 
-const Pricing = () => {
+const Pricing:React.FC = () => {
   return (
     <div>Pricing</div>
   )

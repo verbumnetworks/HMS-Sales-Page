@@ -1,18 +1,15 @@
-"use client";
-import Image from "next/image";
-// import styles from "./page.module.css";
-// import Button from "@/components/Button";
+// "use client";
 
-import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
-// import Features from "@/components/Features";
-// import About from "@/components/About";
-// import Workflow from "@/components/Workflow";
-// import Pricing from "@/components/Pricing";
+// import About from "@/components/about/About";
 // import Banner from "@/components/Banner";
-// import Contact from "@/components/Contact";
-// import Footer from "@/components/Footer";
+// import Contact from "@/components/contact/Contact";
+// import Features from "@/components/feature/Features";
+// import Footer from "@/components/footer/Footer";
+// import Hero from "@/components/hero/Hero";
+import Navbar from "@/components/navbar/Navbar";
+// import Pricing from "@/components/pricing/Pricing";
 // import Testimony from "@/components/Testimony";
+// import Workflow from "@/components/workflow/Workflow";
 
 export default function Home() {
   return (
@@ -20,19 +17,19 @@ export default function Home() {
       <header>
         <Navbar />
       </header>
-      <main className="max-w-7xl mx-auto pt-20 px-6">
+      {/* <main className="max-w-7xl mx-auto pt-20 px-6">
         <Hero />
-        {/* <About /> */}
-        {/* <Features />
+        <About />
+        <Features />
         <Workflow />
         <Pricing />
         <Testimony />
+        <Banner />
         <Contact />
-        <Banner /> */}
       </main>
       <footer>
-        {/* <Footer /> */}
-      </footer>
+        <Footer />{" "}
+      </footer> */}
     </div>
   );
 }

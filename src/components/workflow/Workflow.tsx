@@ -1,5 +1,5 @@
 
-const Workflow = () => {
+const Workflow:React.FC = () => {
   return (
     <div>Workflow</div>
   )

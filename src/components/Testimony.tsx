@@ -1,5 +1,5 @@
 
-const Testimony = () => {
+const Testimony:React.FC = () => {
   return (
     <div>Testimony</div>
   )
