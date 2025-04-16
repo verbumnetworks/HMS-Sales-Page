@@ -1,31 +1,49 @@
-import { cn } from "../../../lib/utils"; // Optional: className merging utility
+// components/ui/Button.tsx
 
+import { cn } from "../../../lib/utils"; // Utility for merging class names
+import React from "react";
+
+// Define the props for the Button component
 type ButtonProps = {
-  children: React.ReactNode;
-  className?: string;
-  onClick?: () => void;
-  type?: "button" | "submit" | "reset";
+  children: React.ReactNode; // Content inside the button
+  label:string;
+  className?: string; // Optional custom styles
+  onClick?: () => void; // Optional click handler
+  variant?: "primary" | "outline";
+
+  type?: "button" | "submit" | "reset"; // Button types
 };
 
+// Functional Button component
 export default function Button({
   children,
-  className,
+  label,
+  className = "",
   onClick,
+  variant="primary",
   type = "button",
 }: ButtonProps) {
+  const baseStyles =
+    "text-sm px-5 py-2 rounded-lg shadow transition-all duration-300";
+
+  const variants = {
+    primary:
+      "bg-gradient-to-r from-[#137c7f] to-[#20a1a5] text-white hover:opacity-90",
+    outline:
+      "border border-[#137c7f] text-[#137c7f] bg-white hover:bg-[#137c7f] hover:text-white",
+  };
+
   return (
     <button
       type={type}
       onClick={onClick}
-      className={cn(
-        "bg-gradient-to-r from-[#137c7f] to-[#20a1a5] text-white text-sm px-4 py-2 rounded-lg shadow hover:opacity-90 transition-all",
-        className
-      )}
+      className={cn(baseStyles, variants[variant], className)}
     >
-      {children}
+      {label}
     </button>
   );
 }
+
 
 
 

@@ -5,7 +5,7 @@
 // import Contact from "@/components/contact/Contact";
 // import Features from "@/components/feature/Features";
 // import Footer from "@/components/footer/Footer";
-// import Hero from "@/components/hero/Hero";
+import Hero from "@/components/hero/Hero";
 import Navbar from "@/components/navbar/Navbar";
 // import Pricing from "@/components/pricing/Pricing";
 // import Testimony from "@/components/Testimony";
@@ -17,16 +17,17 @@ export default function Home() {
       <header>
         <Navbar />
       </header>
-      {/* <main className="max-w-7xl mx-auto pt-20 px-6">
-        <Hero />
-        <About />
+      <main className="max-w-7xl mx-auto pt-20 px-6">
+      <Hero />
+            </main>
+         {/*  <About />
         <Features />
         <Workflow />
         <Pricing />
         <Testimony />
         <Banner />
         <Contact />
-      </main>
+  
       <footer>
         <Footer />{" "}
       </footer> */}
