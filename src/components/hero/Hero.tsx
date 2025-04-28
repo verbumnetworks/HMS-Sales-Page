@@ -35,16 +35,6 @@ const HeroSection = () => {
       </div>
     </div>
   </div>
-
-  <div className="absolute inset-0 flex items-center justify-center z-0 pt-[35rem] md:pt-[40rem] lg:pt-[50rem] ">
-    <Image
-      src="/assets/placeholder.png"
-      alt="place"
-      width={500}
-      height={500}
-       className="w-[80%]" 
-    />
-  </div>
 </section>
 
   );

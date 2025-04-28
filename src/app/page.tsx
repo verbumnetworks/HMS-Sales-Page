@@ -1,6 +1,6 @@
 // "use client";
 
-// import About from "@/components/about/About";
+import About from "@/components/about/About";
 // import Banner from "@/components/Banner";
 // import Contact from "@/components/contact/Contact";
 // import Features from "@/components/feature/Features";
@@ -19,8 +19,9 @@ export default function Home() {
       </header>
       <main className="max-w-7xl mx-auto pt-20 px-6">
       <Hero />
+      <About />
             </main>
-         {/*  <About />
+         {/*  
         <Features />
         <Workflow />
         <Pricing />

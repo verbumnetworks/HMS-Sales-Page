@@ -4,8 +4,7 @@ import { cn } from "../../../lib/utils"; // Utility for merging class names
 import React from "react";
 
 // Define the props for the Button component
-type ButtonProps = {
-  children: React.ReactNode; // Content inside the button
+type ButtonProps = { // Content inside the button
   label:string;
   className?: string; // Optional custom styles
   onClick?: () => void; // Optional click handler
@@ -16,7 +15,6 @@ type ButtonProps = {
 
 // Functional Button component
 export default function Button({
-  children,
   label,
   className = "",
   onClick,
