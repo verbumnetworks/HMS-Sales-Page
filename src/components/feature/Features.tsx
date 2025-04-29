@@ -1,12 +1,153 @@
+
+'use client'; // Important for using Swiper in Next.js 13/14 app router
+
+import { useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper/modules';
+
+import Modal from '../Modal'; // We'll create this next
+
+
+import { Hospital, CalendarDays, Users, FileText, Stethoscope, CreditCard } from 'lucide-react'
+
+const featurescard = [
+  {
+    id:1,
+    title: 'Patient Management',
+    description: 'Easily manage patient records, history, and visits from one dashboard.',
+    icon: <Users className="w-8 h-8 text-purple-600" />
+  },
+  {
+    id:2,
+    title: 'Appointments & Scheduling',
+    description: 'Automate doctor appointments, notifications, and calendar management.',
+    icon: <CalendarDays className="w-8 h-8 text-purple-600" />
+  },
+  {
+    id:3,
+    title: 'Medical Records',
+    description: 'Maintain secure and accessible digital medical records and lab reports.',
+    icon: <FileText className="w-8 h-8 text-purple-600" />
+  },
+  {
+    id:4,
+    title: 'Billing & Invoicing',
+    description: 'Handle payments, invoices, and receipts with ease and transparency.',
+    icon: <CreditCard className="w-8 h-8 text-purple-600 " />
+  },
+  {
+    id:5,
+    title: 'Doctor & Staff Dashboard',
+    description: 'Empower staff with role-based access, duties, and reporting tools.',
+    icon: <Stethoscope className="w-8 h-8 text-purple-600" />
+  },
+  {
+    id:6,
+    title: 'Hospital Analytics',
+    description: 'View insightful analytics and reports to improve hospital efficiency.',
+    icon: <Hospital className="w-8 h-8 text-purple-600" />
+  },
+]
+
+
+
 const Features: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedFeature, setSelectedFeature] = useState<typeof featurescard[0] | null>(null);
+
+  const openModal = (feature: typeof featurescard[0]) => {
+    setSelectedFeature(feature);
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+    setSelectedFeature(null);
+  };
   return (
-    <div>
-      feature 
+    <div className="py-10 bg-gray-100">
+      <h2 className="text-3xl font-bold text-center mb-8">Our Features</h2>
+
+      <Swiper
+        modules={[Pagination]}
+        spaceBetween={20}
+        pagination={{ clickable: true }}
+        breakpoints={{
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        }}
+      >
+        {featurescard.map((feature) => (
+          <SwiperSlide key={feature.id}>
+            <div
+              onClick={() => openModal(feature)}
+              className="cursor-pointer bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition mx-8"
+            >
+              <div className="mb-4 text-center">
+                              {feature.icon}
+             </div>
+              <h3 className="text-xl font-semibold">{feature.title}</h3>
+              <p className="text-gray-600 mt-2">{feature.description}</p>
+
+              <p className="text-gray-600 mt-2">Click to learn more</p>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+
+      {/* Modal */}
+      {isOpen && selectedFeature && (
+        <Modal onClose={closeModal}>
+          <h2 className="text-2xl font-bold">{selectedFeature.title}</h2>
+          <p className="mt-4">{selectedFeature.description}</p>
+        </Modal>
+      )}
     </div>
   );
 };
 
 export default Features;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // import { Hospital, CalendarDays, Users, FileText, Stethoscope, CreditCard } from 'lucide-react'
 
 // const features = [

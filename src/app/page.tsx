@@ -1,15 +1,15 @@
 // "use client";
 
 import About from "@/components/about/About";
-// import Banner from "@/components/Banner";
-// import Contact from "@/components/contact/Contact";
-// import Features from "@/components/feature/Features";
-// import Footer from "@/components/footer/Footer";
+import Footer from "@/components/footer/Footer";
+import Banner from "@/components/Banner";
+import Contact from "@/components/contact/Contact";
+import Features from "@/components/feature/Features";
 import Hero from "@/components/hero/Hero";
+import Choose from "@/components/whyChooseUs/Choose";
 import Navbar from "@/components/navbar/Navbar";
-// import Pricing from "@/components/pricing/Pricing";
-// import Testimony from "@/components/Testimony";
-// import Workflow from "@/components/workflow/Workflow";
+import Pricing from "@/components/pricing/Pricing";
+import Workflow from "@/components/workflow/Workflow";
 
 export default function Home() {
   return (
@@ -17,21 +17,21 @@ export default function Home() {
       <header>
         <Navbar />
       </header>
-      <main className="max-w-7xl mx-auto pt-20 px-6">
-      <Hero />
-      <About />
-            </main>
-         {/*  
+      <main className="pt-20">
+        <Hero />
+        <About />
+        <Choose />
         <Features />
         <Workflow />
+
         <Pricing />
-        <Testimony />
-        <Banner />
         <Contact />
-  
+
+        <Banner />
+      </main>
       <footer>
         <Footer />{" "}
-      </footer> */}
+      </footer>
     </div>
   );
 }
