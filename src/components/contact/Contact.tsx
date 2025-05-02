@@ -3,12 +3,12 @@ const Contact: React.FC = () => {
   return (
   <section id="contact" className="my-8">
    <form
-  action="https://formspree.io/f/xqaqeedv" // replace with your actual form ID
+  action="https://formspree.io/f/xqaqeedv"
   method="POST"
   className="max-w-xl mx-auto space-y-4"
 >
-  <h2 className="text-2xl font-bold text-center">Contact Us</h2>
-  <p className="text-center text-gray-600">We’ll get back to you within 24 hours.</p>
+  <h2 className="text-4xl font-bold text-center  bg-gradient-to-b from-black to-[#0de4d6] text-transparent bg-clip-text">Contact Us</h2>
+  <p className="text-center text-gray-600">Simply request a demo today, and within 24 hours, you'll receive full access to explore all the features and benefits we offer. Experience it firsthand!</p>
 
   <input
     type="text"

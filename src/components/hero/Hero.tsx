@@ -30,7 +30,7 @@ const HeroSection = () => {
         <Button
           label="Request a Demo"
           variant="outline"
-          onClick={() => (window.location.href = "#")}
+          onClick={() => (window.location.href = "#contact")}
         />
       </div>
     </div>

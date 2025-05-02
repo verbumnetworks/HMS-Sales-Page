@@ -7,9 +7,6 @@ const About: React.FC = () => {
   <div className="container px-4 sm:px-6 max-w-screen-xl mx-auto">
     <div className="flex flex-col md:flex-row items-center gap-12">
       <div className="w-full md:w-1/2">
-        <div className="mb-4 text-sm uppercase tracking-widest text-black font-semibold">
-          Version 2.0 is here
-        </div>
         <h2 className="text-4xl sm:text-5xl md:text-6xl tracking-tight font-bold bg-gradient-to-b from-black to-[#0de4d6] text-transparent bg-clip-text">
           Revolutionise your hospital operations
         </h2>
@@ -21,7 +18,7 @@ const About: React.FC = () => {
 
       <div className="w-full md:w-1/2 relative">
         <Image
-          src="/assets/vector.jpg"
+          src="/assets/Rectangle5.png"
           alt="Productivity Illustration"
           width={600}
           height={600}
