@@ -18,14 +18,14 @@ export const checklistItems = [
       "If the doctor orders any laboratory tests, the request is automatically sent to the lab department through the HMS. Lab technicians conduct the tests, record the results, and upload them to the system. The doctor and patient can view the results in real time, reducing delays in diagnosis and treatment.",
   },
   {
-    title: "Share work in minutes",
-    description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+    title: "Follow-Up or Discharge",
+    description:"The patient either schedules a follow-up or is discharged. A consultation summary and medical report are saved and can be printed or accessed later.",
   },
 ];
 
 const Workflow: React.FC = () => {
   return (
+    <section id="workflow">
     <div className="mt-20">
       <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center mt-6 tracking-wide bg-gradient-to-b from-black to-[#0de4d6] text-transparent bg-clip-text">
        Here is how V-HMS Works!
@@ -55,6 +55,7 @@ const Workflow: React.FC = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 

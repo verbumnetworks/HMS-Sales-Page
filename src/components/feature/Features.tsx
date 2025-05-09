@@ -31,7 +31,7 @@ const featurescard = [
     title: "Appointments & Scheduling",
     description:
       "Automate doctor appointments, notifications, and calendar management.",
-    icon: <CalendarDays className="w-8 h-8 text-purple-600" />,
+    icon: <CalendarDays className="w-8 h-8 text-green-700" />,
     details: `The Appointment Scheduling feature streamlines the process of booking and managing appointments for doctors, labs, and services. Patients can easily book slots via mobile or web, while hospital staff can view and manage schedules efficiently.Automatic reminders and notifications reduce no-shows and improve patient engagement. Doctors and nurses receive real-time updates on their daily calendar, making time management more effective.The system supports walk-ins, follow-ups, cancellations, and rescheduling, making it a flexible solution for both small clinics and large hospitals. Integration with electronic health records ensures all appointments are context-aware.`
   },
   {
@@ -57,6 +57,11 @@ const featurescard = [
     description:
       "Empower staff with role-based access, duties, and reporting tools.",
     icon: <Stethoscope className="w-8 h-8 text-green-700" />,
+    details: `This dashboard gives doctors, nurses, and administrative staff a personalized view of their responsibilities. Doctors can view their schedules, appointments, patients’ records, and write prescriptions from one dashboard.
+
+Administrative staff can manage patient admissions, discharges, inventory, and staff shifts. It simplifies internal communication and ensures everyone has the right tools for their role.
+
+With role-based access control, the dashboard ensures each staff member sees only what's relevant to them. Reports and analytics offer insight into performance, enabling better planning and accountability.`
   },
   {
     id: 6,
@@ -64,6 +69,11 @@ const featurescard = [
     description:
       "View insightful analytics and reports to improve hospital efficiency.",
     icon: <Hospital className="w-8 h-8 text-green-700" />,
+    details: `The Hospital Analytics module turns raw data into actionable insights. From patient inflow trends to revenue tracking, it provides real-time dashboards to help administrators make data-driven decisions.
+
+You can monitor key performance indicators (KPIs) such as average wait times, patient satisfaction, and treatment success rates. The visual reports help identify bottlenecks and optimize operations.
+
+This module supports exporting reports to PDF/Excel and integrates with third-party BI tools. It's ideal for board meetings, audits, and long-term planning. Ultimately, it helps the hospital run smarter, not harder.`
   },
 ];
 
@@ -83,8 +93,9 @@ const Features: React.FC = () => {
     setSelectedFeature(null);
   };
   return (
+    <section id="features">
     <div className="py-10 bg-gray-100">
-      <h2 className="text-3xl font-bold text-center mb-8">Our Features</h2>
+      <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center mt-6 tracking-wide mb-4 bg-gradient-to-b from-black to-[#0de4d6] text-transparent bg-clip-text">Our Features</h2>
 
       <Swiper
         modules={[Pagination]}
@@ -120,6 +131,7 @@ const Features: React.FC = () => {
         </Modal>
       )}
     </div>
+    </section>
   );
 };
 

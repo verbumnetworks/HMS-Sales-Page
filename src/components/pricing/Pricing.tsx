@@ -38,7 +38,7 @@ const Pricing:React.FC = () => {
     <section className="py-16 bg-gray-50" id="pricing">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4  bg-gradient-to-b from-black to-[#0de4d6] text-transparent bg-clip-text">Pricing Plans</h2>
+          <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center mt-6 tracking-wide mb-4  bg-gradient-to-b from-black to-[#0de4d6] text-transparent bg-clip-text">Pricing Plans</h2>
           <p className="text-gray-600">Choose the right plan for your hospital management needs.</p>
         </div>
 

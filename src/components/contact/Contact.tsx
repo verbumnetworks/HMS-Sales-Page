@@ -7,7 +7,7 @@ const Contact: React.FC = () => {
   method="POST"
   className="max-w-xl mx-auto space-y-4"
 >
-  <h2 className="text-4xl font-bold text-center  bg-gradient-to-b from-black to-[#0de4d6] text-transparent bg-clip-text">Contact Us</h2>
+  <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center mt-6 tracking-wide mb-4  bg-gradient-to-b from-black to-[#0de4d6] text-transparent bg-clip-text">Contact Us</h2>
   <p className="text-center text-gray-600">Simply request a demo today, and within 24 hours, you'll receive full access to explore all the features and benefits we offer. Experience it firsthand!</p>
 
   <input

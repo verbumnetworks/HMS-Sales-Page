@@ -3,9 +3,9 @@ import Image from "next/image";
 const About: React.FC = () => {
   return (
 
-<section className="relative -mt-36 pt-36 pb-20 overflow-x-clip">
+<section className="relative -mt-36 pt-36 pb-20 overflow-x-clip" id="about">
   <div className="container px-4 sm:px-6 max-w-screen-xl mx-auto">
-    <div className="flex flex-col md:flex-row items-center gap-12">
+    <div className="flex md:flex-row items-center gap-12 flex-col-reverse">
       <div className="w-full md:w-1/2">
         <h2 className="text-4xl sm:text-5xl md:text-6xl tracking-tight font-bold bg-gradient-to-b from-black to-[#0de4d6] text-transparent bg-clip-text">
           Revolutionise your hospital operations

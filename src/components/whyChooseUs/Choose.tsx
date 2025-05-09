@@ -65,7 +65,7 @@ const Choose:React.FC = () => {
   return (
     <section className="py-16 px-4 bg-gray-50" id="why-choose">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl font-bold  bg-gradient-to-b from-black to-[#0de4d6] text-transparent bg-clip-text mb-4">
+        <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center mt-6 tracking-wide bg-gradient-to-b from-black to-[#0de4d6] text-transparent bg-clip-text mb-4">
           Why Choose Verbum Health HMS
         </h2>
         <p className="text-gray-600 mb-12 max-w-3xl mx-auto">
