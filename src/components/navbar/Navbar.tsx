@@ -87,7 +87,7 @@ const Navbar: React.FC = () => {
               <Button
                 label="Get Started"
                 variant="primary"
-                onClick={() => (window.location.href = "#")}
+                onClick={() => (window.location.href = "#contact")}
                 className="px-4 py-2 mt-2 text-white rounded-lg font-medium"
               />
             </motion.ul>

@@ -12,20 +12,9 @@ export const navLinks:Navlink[]  = [
     },
 
     { 
-        label:"Workflow", 
-        url: "#workflow",
-        id:3
-    },
-
-    { 
-        label: "Contact",
-         url: "#contact",
-         id:4
-    },
-    { 
         label: "Pricing",
          url: "#pricing",
-         id: 5
+         id: 3
     },
    
   ];

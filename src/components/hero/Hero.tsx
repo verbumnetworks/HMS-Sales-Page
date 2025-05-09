@@ -1,8 +1,7 @@
 "use client";
 import * as motion from "motion/react-client"
-
 import Button from "@/components/btn/Button"; 
-// import Image from "next/image";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -12,8 +11,8 @@ const HeroSection = () => {
   initial={{ opacity: 0, scale: 0.8 }}
   animate={{ opacity: 1, scale: 1 }}
   transition={{
-    duration: 1.5, // slower and smoother
-    ease: "easeOut", // optional easing for smoother transition
+    duration: 1.5, 
+    ease: "easeOut", 
   }}
 >
     <div className="flex flex-col items-center mt-6 text-center">
@@ -25,22 +24,26 @@ const HeroSection = () => {
         </span>
       </h1>
 
-      <p className="mt-8 text-lg text-neutral-500 max-w-4xl">
+      <p className="mt-8 text-lg text-neutral-700 max-w-4xl">
         Streamline processes, enhance patient care, and improve efficiency
         with our intuitive, custom-made software solution.
       </p>
 
       <div className="flex justify-center my-10 gap-4 flex-wrap">
-        <Button
+        <Link href={"#contact"}>
+          <Button
           label="Get Started"
           variant="primary"
-          onClick={() => (window.location.href = "https://dev.verbumhealth.com/login")}
+          onClick={()=>{}}
         />
+        </Link>
+      <Link href={"#contact"}>
         <Button
           label="Request a Demo"
           variant="outline"
-          onClick={() => (window.location.href = "#contact")}
+          onClick={() => {}}
         />
+      </Link>
       </div>
     </div>
   </motion.div>

@@ -18,10 +18,11 @@ const About: React.FC = () => {
 
       <div className="w-full md:w-1/2 relative">
         <Image
-          src="/assets/Rectangle5.png"
+          src="/assets/about.jpg"
           alt="Productivity Illustration"
           width={600}
           height={600}
+          loading="lazy"
           className="w-full h-auto object-contain rounded-xl shadow-xl"
         />
       </div>

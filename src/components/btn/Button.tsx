@@ -1,28 +1,27 @@
 // components/ui/Button.tsx
 
-import { cn } from "../../../lib/utils"; // Utility for merging class names
+import { cn } from "../../../lib/utils";
 import React from "react";
 
-// Define the props for the Button component
-type ButtonProps = { // Content inside the button
-  label:string;
-  className?: string; // Optional custom styles
-  onClick?: () => void; // Optional click handler
+type ButtonProps = {
+  label: string;
+  className?: string;
+  onClick?: () => void;
   variant?: "primary" | "outline";
-
-  type?: "button" | "submit" | "reset"; // Button types
+  loading?: boolean;
+  type?: "button" | "submit" | "reset";
 };
 
-// Functional Button component
 export default function Button({
   label,
   className = "",
   onClick,
-  variant="primary",
+  variant = "primary",
   type = "button",
+  loading = false,
 }: ButtonProps) {
   const baseStyles =
-    "text-sm px-5 py-2 rounded-lg shadow transition-all duration-300";
+    "text-sm px-5 py-2 rounded-lg shadow transition-all duration-300 inline-flex items-center justify-center gap-2";
 
   const variants = {
     primary:
@@ -36,62 +35,31 @@ export default function Button({
       type={type}
       onClick={onClick}
       className={cn(baseStyles, variants[variant], className)}
+      disabled={loading}
     >
-      {label}
+      {loading && (
+        <svg
+          className="animate-spin h-4 w-4 text-white"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <circle
+            className="opacity-25"
+            cx="12"
+            cy="12"
+            r="10"
+            stroke="currentColor"
+            strokeWidth="4"
+          ></circle>
+          <path
+            className="opacity-75"
+            fill="currentColor"
+            d="M4 12a8 8 0 018-8v8z"
+          ></path>
+        </svg>
+      )}
+      {loading ? "Loading..." : label}
     </button>
   );
 }
-
-
-
-
-// "use client";
-
-// import React from "react";
-
-// interface ButtonProps {
-//   label: string;
-//   onClick?: () => void;
-//   variant?: "primary" | "secondary" | "outline";
-//   className?: string;
-//   disabled?: boolean;
-//   type?: "button" | "submit" | "reset";
-//   iconLeft?: React.ReactNode;
-//   iconRight?: React.ReactNode;
-// }
-
-// const Button: React.FC<ButtonProps> = ({
-//   label,
-//   onClick,
-//   variant = "primary",
-//   className = "",
-//   disabled = false,
-//   type = "button",
-//   iconLeft,
-//   iconRight,
-// }) => {
-//   const baseStyles =
-//     "inline-flex items-center justify-center gap-2 px-5 py-2.5 font-medium rounded-2xl transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500";
-
-//   const variants = {
-//     primary: "bg-gradient-to-br from-purple-600 to-blue-500 ",
-//     secondary: "bg-gray-600 text-white hover:bg-gray-700",
-//     outline:
-//       "border border-orange-600 text-white hover:bg-gradient-to-br from-purple-600 to-blue-500 hover:text-white",
-//   };
-
-//   return (
-//     <button
-//       onClick={onClick}
-//       type={type}
-//       className={`${baseStyles} ${variants[variant]} ${className}`}
-//       disabled={disabled}
-//     >
-//       {iconLeft && <span className="w-5 h-5">{iconLeft}</span>}
-//       <span>{label}</span>
-//       {iconRight && <span className="w-5 h-5">{iconRight}</span>}
-//     </button>
-//   );
-// };
-
-// export default Button;
