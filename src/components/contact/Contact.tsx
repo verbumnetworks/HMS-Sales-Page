@@ -22,7 +22,7 @@ const Contact: FC = () => {
     console.log(formData);
 
     try {
-      const res = await fetch("https://formspree.io/f/xqaqeedv", {
+      const res = await fetch(process.env.NEXT_PUBLIC_FormLink as string, {
         method: "POST",
         body: JSON.stringify(formData),
       });
