@@ -4,16 +4,16 @@ const Choose: React.FC = () => {
   return (
     <section className="py-16 px-4 bg-gray-50" id="why-choose">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl text-center mt-6 tracking-wide bg-gradient-to-b from-black to-[#0de4d6] text-transparent bg-clip-text mb-4">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl text-center mt-6 tracking-wide bg mb-4">
           Why Choose Verbum Health HMS
         </h2>
-        <p className="text-gray-600 mb-12 max-w-3xl mx-auto">
+        <p className="text-color mb-12 max-w-3xl mx-auto">
           Verbum Health empowers hospitals and clinics with a secure,
           user-friendly, and affordable system tailored to your unique needs.
           Here’s what makes us the smart choice.
         </p>
 
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 cursor-pointer">
           {reasons.map((reason) => {
             const Icon = reason.icon;
             return (
@@ -29,7 +29,7 @@ const Choose: React.FC = () => {
                     {reason.title}
                   </h3>
                 </div>
-                <p className="text-gray-700 text-sm">{reason.description}</p>
+                <p className="text-color text-sm">{reason.description}</p>
               </div>
             );
           })}

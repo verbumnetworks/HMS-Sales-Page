@@ -1,4 +1,3 @@
-// "use client";
 
 import About from "@/components/about/About";
 import Footer from "@/components/footer/Footer";
@@ -8,20 +7,17 @@ import Features from "@/components/feature/Features";
 import Hero from "@/components/hero/Hero";
 import Choose from "@/components/whyChooseUs/Choose";
 import Navbar from "@/components/navbar/Navbar";
-import Pricing from "@/components/pricing/Pricing";
 
 export default function Home() {
   return (
     <div>
       <Navbar />
-      <main className="pt-20">
+      <main className="pt-20 max-w-[100vw]">
         <Hero />
         <About />
         <Choose />
         <Features />
-        {/* <Workflow /> */}
 
-        <Pricing />
         <Contact />
 
         <Banner />

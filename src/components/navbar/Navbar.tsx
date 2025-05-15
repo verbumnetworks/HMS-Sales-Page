@@ -17,14 +17,24 @@ const Navbar: React.FC = () => {
       {/* Top notice bar */}
       <div className="flex justify-center items-center py-3 bg-black text-white text-sm gap-3">
         <p>Get Started for free</p>
-        <p className="text-white/60 hidden md:block">streamline your workflow</p>
+        <p className="text-white/60 hidden md:block">
+          streamline your workflow
+        </p>
       </div>
 
       {/* Navbar */}
       <div className="py-2 px-4 md:px-12 bg-white shadow-sm">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Image src="/assets/logo.png" alt="VHMS-Logo" width={40} height={40} />
+          <div className="flex items-center justify-center gap-2">
+            <Image
+              src="/assets/logo.png"
+              alt="Verbum Health Management System"
+              width={40}
+              height={40}
+            />
+            <p className="text-2xl hidden md:block bg">Verbum Health</p>
+          </div>
 
           {/* Desktop Menu */}
           <ul className="hidden md:flex gap-6 text-black/60 items-center">
@@ -53,7 +63,11 @@ const Navbar: React.FC = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
-              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
             </motion.button>
           </div>
         </div>

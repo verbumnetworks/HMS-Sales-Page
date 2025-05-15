@@ -24,7 +24,7 @@ const Features: React.FC = () => {
   return (
     <section id="features" className="py-10 bg-gray-100">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl text-center mt-6 tracking-wide mb-8 bg-gradient-to-b from-black to-[#0de4d6] text-transparent bg-clip-text">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl text-center mt-6 tracking-wide mb-8 bg">
           Our Features
         </h2>
 
@@ -47,9 +47,9 @@ const Features: React.FC = () => {
               </div>
 
               <h3 className="text-xl font-semibold text-center">{feature.title}</h3>
-              <p className="text-gray-600 mt-2 text-center">{feature.description}</p>
+              <p className="text-color mt-2 text-center">{feature.description}</p>
 
-              <p className="bg-gradient-to-b from-black to-[#0de4d6] text-transparent bg-clip-text text-2xl font-bold text-center mt-2">
+              <p className="bg text-2xl font-bold text-center mt-2">
                 Click to learn more
               </p>
             </div>

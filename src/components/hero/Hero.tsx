@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[100vh] pb-20 md:pt-10 md:pb-10 z-10 mx-auto">
+    <section className="relative md:min-h-[90vh] pb-2 pt-10 md:pt-10 md:pb-10 z-10 mx-auto my-4">
       <motion.div
         className="container relative"
         initial={{ opacity: 0, scale: 0.8 }}
@@ -18,13 +18,13 @@ const HeroSection = () => {
         <div className="flex flex-col items-center mt-6 text-center">
           <h1 className="max-w-full sm:max-w-[650px] md:max-w-[700px] lg:max-w-[800px] text-4xl sm:text-6xl lg:text-7xl tracking-wide mx-auto">
             Transform Your Hospital with
-            <span className="bg-gradient-to-b from-black to-[#0de4d6] text-transparent bg-clip-text">
+            <span className="bg">
               {" "}
               Verbum Health HMS
             </span>
           </h1>
 
-          <p className="mt-8 text-lg text-neutral-700 max-w-4xl">
+          <p className="mt-8 text-lg text-color max-w-4xl">
             Streamline processes, enhance patient care, and improve efficiency
             with our intuitive, custom-made software solution.
           </p>

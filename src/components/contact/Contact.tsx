@@ -22,16 +22,18 @@ const Contact: FC = () => {
     console.log(formData);
 
     try {
-      const res = await fetch(process.env.NEXT_PUBLIC_FormLink as string, {
+      await fetch(process.env.NEXT_PUBLIC_FormLink as string, {
         method: "POST",
         body: JSON.stringify(formData),
       });
-      const data = await res.json();
-      console.log(data);
     } catch (error) {
       console.log(error);
     }
-
+    setFormData({
+      message: "",
+      name: "",
+      email: "",
+    });
     // e.currentTarget.submit(); // Actually submit the form
     setLoading(false);
   };
@@ -39,13 +41,13 @@ const Contact: FC = () => {
   return (
     <section id="contact" className="my-8">
       <form className="max-w-xl mx-auto space-y-4" onSubmit={handleSubmit}>
-        <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center mt-6 tracking-wide mb-4 bg-gradient-to-b from-black to-[#0de4d6] text-transparent bg-clip-text">
+        <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center mt-6 tracking-wide mb-4 bg">
           Contact Us
         </h2>
-        <p className="text-center text-gray-600">
-          Simply request a demo today, and within 24 hours, {"you'll"} receive full
-          access to explore all the features and benefits we offer. Experience
-          it firsthand!
+        <p className="text-center text-color">
+          Simply request a demo today, and within 24 hours, {"you'll"} receive
+          full access to explore all the features and benefits we offer.
+          Experience it firsthand!
         </p>
 
         <input
