@@ -1,5 +1,5 @@
 "use client";
-import React, { ChangeEvent, FC, FormEvent, useRef, useState } from "react";
+import React, { ChangeEvent, FC, FormEvent, useState } from "react";
 import Button from "../btn/Button";
 
 const Contact: FC = () => {
@@ -43,7 +43,7 @@ const Contact: FC = () => {
           Contact Us
         </h2>
         <p className="text-center text-gray-600">
-          Simply request a demo today, and within 24 hours, you'll receive full
+          Simply request a demo today, and within 24 hours, {"you'll"} receive full
           access to explore all the features and benefits we offer. Experience
           it firsthand!
         </p>

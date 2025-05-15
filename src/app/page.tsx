@@ -9,14 +9,11 @@ import Hero from "@/components/hero/Hero";
 import Choose from "@/components/whyChooseUs/Choose";
 import Navbar from "@/components/navbar/Navbar";
 import Pricing from "@/components/pricing/Pricing";
-import Workflow from "@/components/workflow/Workflow";
 
 export default function Home() {
   return (
     <div>
-      <header>
-        <Navbar />
-      </header>
+      <Navbar />
       <main className="pt-20">
         <Hero />
         <About />
