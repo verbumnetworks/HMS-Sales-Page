@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import { faqData } from "@/constants/Constant";
 import { Minus, Plus } from "lucide-react";
 
