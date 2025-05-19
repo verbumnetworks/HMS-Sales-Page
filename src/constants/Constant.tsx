@@ -23,6 +23,7 @@ export type Reasoncard = {
   description: string;
   icon: LucideIcon;
 };
+export type Faqdata ={question:string; answer:string};
 
 export const navLinks: Navlink[] = [
   {
@@ -49,7 +50,7 @@ export const featurescard: Featurecard[] = [
     title: "Patient Management",
     description:
       "Easily manage patient records, history, and visits from one dashboard.",
-    icon: "/assets/Rectangle4.png",
+    icon: "/assets/photo3.jpg",
     details: `Our Patient Management module offers a centralized platform to access, update, and organize patient information in real-time. You can securely store medical histories, allergies, diagnoses, and more in a structured and intuitive interface. It reduces manual paperwork and enhances collaboration among departments by keeping patient data synchronized and accessible across the hospital system. Staff can efficiently track patient journeys and history to ensure continuity of care. The module supports unique patient IDs, search filters, and real-time updates, ensuring that the right information is always available to authorized personnel. It is compliant with data privacy regulations to ensure maximum security.`,
   },
   {
@@ -57,7 +58,7 @@ export const featurescard: Featurecard[] = [
     title: "Appointments & Scheduling",
     description:
       "Automate doctor appointments, notifications, and calendar management.",
-    icon: "/assets/Rectangle2.png",
+    icon: "/assets/about2.jpg",
     details: `The Appointment Scheduling feature streamlines the process of booking and managing appointments for doctors, labs, and services. Patients can easily book slots via mobile or web, while hospital staff can view and manage schedules efficiently.Automatic reminders and notifications reduce no-shows and improve patient engagement. Doctors and nurses receive real-time updates on their daily calendar, making time management more effective.The system supports walk-ins, follow-ups, cancellations, and rescheduling, making it a flexible solution for both small clinics and large hospitals. Integration with electronic health records ensures all appointments are context-aware.`,
   },
   {
@@ -65,7 +66,7 @@ export const featurescard: Featurecard[] = [
     title: "Medical Records",
     description:
       "Maintain secure and accessible digital medical records and lab reports.",
-    icon: "/assets/Rectangle3.png",
+    icon: "/assets/about3.jpg",
     details: `Digital medical records provide a secure and paperless way to store and retrieve patient health data. This module includes prescriptions, diagnoses, lab reports, radiology images, treatment plans, and other key documents. All records are encrypted and stored in the cloud, ensuring both safety and accessibility from any authorized device. Doctors can quickly access historical data during consultations for better decision-making.Role-based access ensures that only the right personnel view or edit sensitive information. The system supports version control and audit logs to maintain data integrity and accountability.`,
   },
   {
@@ -73,7 +74,7 @@ export const featurescard: Featurecard[] = [
     title: "Billing & Invoicing",
     description:
       "Handle payments, invoices, and receipts with ease and transparency.",
-    icon: "/assets/Rectangle4.png",
+    icon: "/assets/photo1.jpg",
     details: `The Billing & Invoicing module automates the financial side of hospital management, covering services, medications, consultations, and insurance claims. It generates accurate invoices and receipts instantly.It supports multiple payment gateways, split billing, and insurance processing, allowing for a seamless financial experience for both patients and hospital staff. All transactions are recorded and auditable.
       You can set pricing rules based on patient categories (e.g., senior citizens, insured) and generate financial reports to track revenue and outstanding balances. This helps in improving cash flow and transparency.`,
   },
@@ -82,7 +83,7 @@ export const featurescard: Featurecard[] = [
     title: "Doctor & Staff Dashboard",
     description:
       "Empower staff with role-based access, duties, and reporting tools.",
-    icon: "/assets/Rectangle4.png",
+    icon: "/assets/photo3.jpg",
     details: `This dashboard gives doctors, nurses, and administrative staff a personalized view of their responsibilities. Doctors can view their schedules, appointments, patients’ records, and write prescriptions from one dashboard.
   
   Administrative staff can manage patient admissions, discharges, inventory, and staff shifts. It simplifies internal communication and ensures everyone has the right tools for their role.
@@ -94,7 +95,7 @@ export const featurescard: Featurecard[] = [
     title: "Hospital Analytics",
     description:
       "View insightful analytics and reports to improve hospital efficiency.",
-    icon: "/assets/Rectangle2.png",
+    icon: "/assets/ok.jpg",
     details: `The Hospital Analytics module turns raw data into actionable insights. From patient inflow trends to revenue tracking, it provides real-time dashboards to help administrators make data-driven decisions.
   
   You can monitor key performance indicators (KPIs) such as average wait times, patient satisfaction, and treatment success rates. The visual reports help identify bottlenecks and optimize operations.
@@ -161,5 +162,53 @@ export const reasons: Reasoncard[] = [
     icon: MessageCircleHeart,
   },
 ];
+
+
+
+
+// constants/faq.ts
+export const faqData: Faqdata[] = [
+  {
+    question: "What is Verbum Health HMS?",
+    answer:
+      "Verbum Health HMS is a custom-built Hospital Management System designed to streamline hospital processes and improve efficiency.",
+  },
+  {
+    question: "Is Verbum Health HMS secure?",
+    answer:
+      "Yes, it uses advanced security protocols to protect patient data and hospital records.",
+  },
+  {
+    question: "Can it be customized for my hospital?",
+    answer:
+      "Absolutely! Verbum Health HMS is fully customizable to meet your hospital’s specific needs.",
+  },
+  {
+    question: "Do you offer training and support?",
+    answer:
+      "Yes, we provide full onboarding, staff training, and ongoing support after implementation.",
+  },
+  {
+    question: "Is the system cloud-based?",
+    answer:
+      "Yes, Verbum Health HMS is cloud-based, accessible from anywhere, and requires no local server installation.",
+  },
+  {
+    question: "How long does implementation take?",
+    answer:
+      "Implementation typically takes 1-3 weeks depending on the hospital size and customization needs.",
+  },
+  {
+    question: "Can I request a demo?",
+    answer:
+      "Yes, just fill out the demo request form and we’ll schedule a walkthrough with your team.",
+  },
+  {
+    question: "How much does it cost?",
+    answer:
+      "The pricing depends on your hospital’s size, specific needs, and required features. However, Verbum Health HMS is designed to be affordable for hospitals of all sizes, ensuring great value for the services and support included.",
+  },
+];
+
 //   {label: string, url:string, id:number, name?:string}[]
 // interface Navlink {label: string, url:string, id:number, name?:string}

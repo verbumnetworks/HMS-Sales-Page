@@ -7,8 +7,8 @@ import { featurescard } from "@/constants/Constant";
 
 const Features: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedFeature, setSelectedFeature] = useState< 
-    (typeof featurescard)[0] | null 
+  const [selectedFeature, setSelectedFeature] = useState<
+    (typeof featurescard)[0] | null
   >(null);
 
   const openModal = (feature: (typeof featurescard)[0]) => {
@@ -24,9 +24,12 @@ const Features: React.FC = () => {
   return (
     <section id="features" className="py-10 bg-gray-100">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl text-center mt-6 tracking-wide mb-8 bg">
-          Our Features
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl text-center mt-6 font-bold tracking-wide mb-8 bg">
+          Features of Vebum Health HMS
         </h2>
+         <p className="text-color text-center mb-12 max-w-3xl mx-auto">
+           Discover the powerful features of our Hospital Management System designed to simplify administrative tasks, improve patient experience, and boost operational efficiency
+        </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {featurescard.map((feature) => (
@@ -39,15 +42,20 @@ const Features: React.FC = () => {
                 <Image
                   src={feature.icon}
                   alt={feature.title}
-                  height={60}
-                  width={60}
+                  height={200}
+                  width={200}
+                  loading="lazy"
                   sizes="100vw"
-                  className="w-28 h-28 rounded-md"
+                  className="w-35 h-35 rounded-full"
                 />
               </div>
 
-              <h3 className="text-xl font-semibold text-center">{feature.title}</h3>
-              <p className="text-color mt-2 text-center">{feature.description}</p>
+              <h3 className="text-xl font-semibold text-center">
+                {feature.title}
+              </h3>
+              <p className="text-color mt-2 text-center">
+                {feature.description}
+              </p>
 
               <p className="bg text-2xl font-bold text-center mt-2">
                 Click to learn more

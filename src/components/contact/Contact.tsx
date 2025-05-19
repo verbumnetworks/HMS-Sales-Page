@@ -39,9 +39,9 @@ const Contact: FC = () => {
   };
 
   return (
-    <section id="contact" className="my-8">
+    <section id="contact" className="my-8 px-6">
       <form className="max-w-xl mx-auto space-y-4" onSubmit={handleSubmit}>
-        <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center mt-6 tracking-wide mb-4 bg">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl text-center mt-6 tracking-wide mb-4 bg font-bold">
           Contact Us
         </h2>
         <p className="text-center text-color">

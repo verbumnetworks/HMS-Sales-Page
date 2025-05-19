@@ -4,7 +4,7 @@ const Choose: React.FC = () => {
   return (
     <section className="py-16 px-4 bg-gray-50" id="why-choose">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl text-center mt-6 tracking-wide bg mb-4">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl text-center mt-6 tracking-wide bg mb-4 font-bold">
           Why Choose Verbum Health HMS
         </h2>
         <p className="text-color mb-12 max-w-3xl mx-auto">

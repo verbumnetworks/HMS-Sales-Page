@@ -6,6 +6,14 @@
 .text-color{
   @apply text-gray-700;
 }
+.swiper-pagination-bullet {
+  background-color: white !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #22c55e !important; /* Tailwind green-500 */
+}
 
 
 

@@ -14,14 +14,7 @@ const Navbar: React.FC = () => {
 
   return (
     <header className="fixed inset-x-0 top-0 z-20 backdrop-blur-sm">
-      {/* Top notice bar */}
-      <div className="flex justify-center items-center py-3 bg-black text-white text-sm gap-3">
-        <p>Get Started for free</p>
-        <p className="text-white/60 hidden md:block">
-          streamline your workflow
-        </p>
-      </div>
-
+     
       {/* Navbar */}
       <div className="py-2 px-4 md:px-12 bg-white shadow-sm">
         <div className="flex items-center justify-between">

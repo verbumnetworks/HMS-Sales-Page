@@ -3,7 +3,7 @@ import Image from "next/image";
 const About: React.FC = () => {
   return (
     <section
-      className="relative pt-2 md:pt-36 pb-20 overflow-x-clip"
+      className="relative pt-4 md:pt-40 pb-20 overflow-x-clip"
       id="about"
     >
       <div className="container px-4 sm:px-6 max-w-screen-xl mx-auto">
@@ -12,7 +12,7 @@ const About: React.FC = () => {
             <h2 className="text-3xl sm:text-4xl md:text-5xl tracking-tight font-bold bg">
             Verbum Health: Hospital Management System (VH:HMS)
             </h2>
-            <p className="text-base text-color">
+            <p className="text-base text-color text-justify mt-3">
               Verbum Network Ltd, a leading Nigerian tech company, has launched
               Verbum Health Hospital Management System (VH-HSM)—a powerful,
               all-in-one digital platform built to streamline hospital
@@ -33,12 +33,12 @@ const About: React.FC = () => {
 
           <div className="w-full md:w-1/2 relative">
             <Image
-              src="/assets/about.jpg"
+              src="/assets/my.jpg"
               alt="Productivity Illustration"
-              width={600}
-              height={600}
+              width={200}
+              height={200}
               loading="lazy"
-              className="w-full h-auto object-contain rounded-xl shadow-xl"
+              className="w-full h-auto object-cover rounded-xl shadow-xl"
             />
           </div>
         </div>
