@@ -5,7 +5,7 @@ import Button from "@/components/btn/Button";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[50vh] pt-32 pb-20 md:pb-10 z-10">
+    <section className="relative min-h-[50vh] px-6 pt-32 pb-20 md:pb-10 z-10">
       <div className="container relative">
         <motion.div
           className="flex flex-col items-center mt-6 text-center"
@@ -15,7 +15,7 @@ const HeroSection = () => {
         >
           <h1 className="max-w-full sm:max-w-[650px] md:max-w-[700px] lg:max-w-[800px] text-4xl sm:text-6xl lg:text-7xl tracking-wide mx-auto">
             Transform Your Hospital with
-            <span className="bg-gradient-to-b from-black to-[#0de4d6] text-transparent bg-clip-text">
+            <span className="bg">
               {" "}
               Verbum Health HMS
             </span>

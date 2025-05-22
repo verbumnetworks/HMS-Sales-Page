@@ -10,7 +10,7 @@ import {
 const Footer: React.FC = () => {
 ;
  return (
- <footer className="dark:bg-transparent bg-[#0f1217] text-white py-10">
+ <footer className="bg-[#0f1217] text-white py-10">
       <div className="max-w-6xl mx-auto flex flex-col items-center">
         {/* Logo */}
         <div className="mb-6">
