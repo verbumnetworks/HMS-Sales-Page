@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
               width={40}
               height={40}
             />
-            <p className="text-2xl hidden md:block bg">Verbum Health</p>
+            <p className="text-2xl hidden font-bold md:block bg">Verbum Health</p>
           </div>
 
           {/* Desktop Menu */}
@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
             <Button
               label="Get Started"
               variant="primary"
-              onClick={() => (window.location.href = "#")}
+              onClick={() => (window.location.href = "#contact")}
               className="px-4 py-2 text-white rounded-lg font-medium"
             />
           </ul>

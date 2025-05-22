@@ -1,10 +1,13 @@
+"use client";
+
 import { reasons } from "@/constants/Constant";
+import { motion } from "framer-motion";
 
 const Choose: React.FC = () => {
   return (
     <section className="py-16 px-4 bg-gray-50" id="why-choose">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl text-center mt-6 tracking-wide bg mb-4 font-bold">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl text-center mt-6 tracking-wide bg mb-4 font-bold">
           Why Choose Verbum Health HMS
         </h2>
         <p className="text-color mb-12 max-w-3xl mx-auto">
@@ -14,12 +17,16 @@ const Choose: React.FC = () => {
         </p>
 
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 cursor-pointer">
-          {reasons.map((reason) => {
+          {reasons.map((reason, index) => {
             const Icon = reason.icon;
             return (
-              <div
+              <motion.div
                 key={reason.id}
                 className="bg-white p-6 shadow-lg rounded-xl border hover:shadow-xl transition-all duration-300 text-left"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+                viewport={{ once: true }}
               >
                 <div className="flex items-center gap-3 mb-4">
                   <div className="p-3 rounded-full bg-gradient-to-b from-black to-[#0de4d6] text-white">
@@ -30,7 +37,7 @@ const Choose: React.FC = () => {
                   </h3>
                 </div>
                 <p className="text-color text-sm">{reason.description}</p>
-              </div>
+              </motion.div>
             );
           })}
         </div>

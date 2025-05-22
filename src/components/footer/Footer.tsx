@@ -1,37 +1,65 @@
 import Link from "next/link";
+import { navLinks } from "@/constants/Constant";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaGithub,
+} from "react-icons/fa";
+
 
 const Footer: React.FC = () => {
-  const links = [
-    { title: "Home", url: "#" },
-    { title: "Contact", url: "#contact" },
-    { title: "About Us", url: "#about" },
-  ];
-  return (
-    <footer className="bg-black text-white py-8">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col sm:flex-row justify-between items-center text-center sm:text-left mb-6">
-          <div>
-            <h3 className="text-2xl font-semibold mb-2">Verbum Networks Limited</h3>
-            <p className="text-gray-400">Empowering your healthcare management with cutting-edge technology.</p>
-          </div>
-          <div className="mt-6 sm:mt-0">
-            <ul className="flex flex-col sm:flex-row justify-center sm:justify-start gap-6 text-gray-400">
-              {links.map((link, idx) => (
-                <li key={idx} className="truncate max-w-[120px] sm:max-w-full">
-                  <Link href={link.url}  className="hover:text-white block text-ellipsis overflow-hidden whitespace-nowrap">
-                   {link.title}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+;
+ return (
+ <footer className="dark:bg-transparent bg-[#0f1217] text-white py-10">
+      <div className="max-w-6xl mx-auto flex flex-col items-center">
+        {/* Logo */}
+        <div className="mb-6">
+          <Link href="/" className="text-xl font-bold flex items-center gap-2">
+            <span className="text-white text-lg font-bold md:text-3xl hover:text-[#0de4d6]">Verbum Networks Limited</span>
+          </Link>
         </div>
-        <div className="text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Verbum Networks Limited. All Rights Reserved.</p>
+
+        <ul className="flex gap-6 text-sm mb-6">
+          {navLinks.map((link) => (
+            <li key={link.id}>
+              <Link href={link.url} className="hover:text-[#0de4d6] transition">
+                {link.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+
+        <div className="flex gap-4 mb-6">
+          {[FaFacebookF, FaTwitter, FaGithub ].map((Icon, idx) => (
+            <Link
+              key={idx}
+              href="https://www.facebook.com/share/1HBSiDL1xn/"
+              className="w-10 h-10 bg-white text-gray-800 rounded-full flex items-center justify-center hover:bg transition-all duration-200 hover:text-[#0de4d6]"
+            >
+              <Icon size={18} />
+            </Link>
+          ))}
         </div>
+
+        <p className="text-sm text-center">
+        &copy; {new Date().getFullYear()} Verbum Networks Limited. All Rights Reserved{" "}
+        </p>
       </div>
     </footer>
   );
-}
+ }
 
 export default Footer;
+
+
+
+
+
+
+
+
+
+
+
+
+

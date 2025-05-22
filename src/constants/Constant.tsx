@@ -58,7 +58,7 @@ export const featurescard: Featurecard[] = [
     title: "Appointments & Scheduling",
     description:
       "Automate doctor appointments, notifications, and calendar management.",
-    icon: "/assets/about2.jpg",
+    icon: "/assets/ok.jpg",
     details: `The Appointment Scheduling feature streamlines the process of booking and managing appointments for doctors, labs, and services. Patients can easily book slots via mobile or web, while hospital staff can view and manage schedules efficiently.Automatic reminders and notifications reduce no-shows and improve patient engagement. Doctors and nurses receive real-time updates on their daily calendar, making time management more effective.The system supports walk-ins, follow-ups, cancellations, and rescheduling, making it a flexible solution for both small clinics and large hospitals. Integration with electronic health records ensures all appointments are context-aware.`,
   },
   {
@@ -66,7 +66,7 @@ export const featurescard: Featurecard[] = [
     title: "Medical Records",
     description:
       "Maintain secure and accessible digital medical records and lab reports.",
-    icon: "/assets/about3.jpg",
+    icon: "/assets/img4.jpg",
     details: `Digital medical records provide a secure and paperless way to store and retrieve patient health data. This module includes prescriptions, diagnoses, lab reports, radiology images, treatment plans, and other key documents. All records are encrypted and stored in the cloud, ensuring both safety and accessibility from any authorized device. Doctors can quickly access historical data during consultations for better decision-making.Role-based access ensures that only the right personnel view or edit sensitive information. The system supports version control and audit logs to maintain data integrity and accountability.`,
   },
   {
@@ -74,7 +74,7 @@ export const featurescard: Featurecard[] = [
     title: "Billing & Invoicing",
     description:
       "Handle payments, invoices, and receipts with ease and transparency.",
-    icon: "/assets/photo1.jpg",
+    icon: "/assets/img6.jpg",
     details: `The Billing & Invoicing module automates the financial side of hospital management, covering services, medications, consultations, and insurance claims. It generates accurate invoices and receipts instantly.It supports multiple payment gateways, split billing, and insurance processing, allowing for a seamless financial experience for both patients and hospital staff. All transactions are recorded and auditable.
       You can set pricing rules based on patient categories (e.g., senior citizens, insured) and generate financial reports to track revenue and outstanding balances. This helps in improving cash flow and transparency.`,
   },
@@ -83,7 +83,7 @@ export const featurescard: Featurecard[] = [
     title: "Doctor & Staff Dashboard",
     description:
       "Empower staff with role-based access, duties, and reporting tools.",
-    icon: "/assets/photo3.jpg",
+    icon: "/assets/img7.jpg",
     details: `This dashboard gives doctors, nurses, and administrative staff a personalized view of their responsibilities. Doctors can view their schedules, appointments, patients’ records, and write prescriptions from one dashboard.
   
   Administrative staff can manage patient admissions, discharges, inventory, and staff shifts. It simplifies internal communication and ensures everyone has the right tools for their role.
@@ -95,7 +95,7 @@ export const featurescard: Featurecard[] = [
     title: "Hospital Analytics",
     description:
       "View insightful analytics and reports to improve hospital efficiency.",
-    icon: "/assets/ok.jpg",
+    icon: "/assets/img8.jpeg",
     details: `The Hospital Analytics module turns raw data into actionable insights. From patient inflow trends to revenue tracking, it provides real-time dashboards to help administrators make data-driven decisions.
   
   You can monitor key performance indicators (KPIs) such as average wait times, patient satisfaction, and treatment success rates. The visual reports help identify bottlenecks and optimize operations.
