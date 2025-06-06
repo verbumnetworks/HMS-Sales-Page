@@ -27,6 +27,15 @@ export const metadata: Metadata = {
     "EHR",
     "hospital software Nigeria",
     "patient management",
+    "medical records",
+    "healthcare management",
+    "hospital administration",
+    "healthcare IT",
+    "healthcare solutions",
+    "healthcare technology",
+    "healthcare software development",
+    "healthcare management software",
+    "healthcare software solutions",
   ],
   authors: [
     { name: "Verbum Networks Limited Enugu", url: "https://verbumnetworksenugu.com" },
@@ -89,7 +98,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable}bg-[#EAEEFE]`}
+        className={`${geistSans.variable} ${geistMono.variable}`}
       >
         {children}
       </body>
