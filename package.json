@@ -5,13 +5,11 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "next start -p 4012",
+    "start": "next start -p 4017",
     "lint": "next lint"
   },
   "dependencies": {
-    "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/postcss": "^4.1.0",
-    "embla-carousel-react": "^8.6.0",
     "lucide-react": "^0.487.0",
     "motion": "^12.10.5",
     "next": "15.2.4",
