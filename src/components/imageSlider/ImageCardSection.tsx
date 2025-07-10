@@ -17,11 +17,17 @@ type ImageCard = {
 
 const imageCards: ImageCard[] = [
   { id: 1, imageUrl: "/assets/vh1.jpg" },
-  { id: 2, imageUrl: "/assets/vh2.jpg" },
-  { id: 3, imageUrl: "/assets/vh3.jpg" },
-  { id: 4, imageUrl: "/assets/vh4.jpg" },
-  { id: 5, imageUrl: "/assets/vh5.jpg" },
-  { id: 6, imageUrl: "/assets/vh6.jpg" },
+    { id: 2, imageUrl: "/assets/reg.png" },
+  { id: 3, imageUrl: "/assets/dashboard.png" },
+  { id: 4, imageUrl: "/assets/vh2.jpg" },
+  { id: 5, imageUrl: "/assets/dashboard1.png" },
+  { id: 6, imageUrl: "/assets/vh4.jpg" },
+  { id: 7, imageUrl: "/assets/dashboard2.png" },
+  { id: 8, imageUrl: "/assets/vh6.jpg" },
+  { id: 9, imageUrl: "/assets/login.png" },
+    { id: 10, imageUrl: "/assets/dashboard3.png" },
+
+
 ];
 
 export default function ImageCardSection() {

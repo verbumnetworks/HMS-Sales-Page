@@ -8,6 +8,7 @@ import Choose from "@/components/whyChooseUs/Choose";
 import Navbar from "@/components/navbar/Navbar";
 import FaqAccordion from "@/components/faq/FaqAccordion";
 import ImageCardSection from "@/components/imageSlider/ImageCardSection";
+import VideoGallery from "@/components/video/VideoCarousel";
 
 export default function Home() {
   return (
@@ -19,10 +20,10 @@ export default function Home() {
         <ImageCardSection />
         <Features />
         <Choose />
+                <VideoGallery />
+
         <FaqAccordion />
-
         <Contact />
-
         <Banner />
       </main>
       <footer>
